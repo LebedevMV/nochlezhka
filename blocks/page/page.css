@@ -1,0 +1,14 @@
+.page {
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: "TT Firs Neue";
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+  }
+}
+
+body {
+  margin: 0;
+}

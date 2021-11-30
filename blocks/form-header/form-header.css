@@ -1,0 +1,7 @@
+.form-header {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 309px;
+    grid-auto-rows: max-content;
+    gap: 12px;
+}

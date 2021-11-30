@@ -1,4 +1,4 @@
-.input {
+.form__input {
     background-color: transparent;
     color: var(--color-primary-dark);
     padding: 12px 24px;
@@ -12,11 +12,11 @@
     line-height: 24px;
 }
 
-.input:focus {
+.form__input:focus {
     outline: none;
     border: 2px solid var(--color-primary-dark);
 }
 
-.input::placeholder {
+.form__input::placeholder {
     color: var(--color-dark-secondary);
 }

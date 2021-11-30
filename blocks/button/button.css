@@ -1,6 +1,6 @@
 .button {
-  background-color: #7100ff;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
   padding: 12px 24px;
   border-radius: 26px;
   display: flex;

@@ -6,4 +6,5 @@
   --color-light-secondary: #ebe9ed;
   --color-dark-secondary: #96949e;
   --color-accident: #ffd400;
+  background-color: var(--color-primary-light);
 }

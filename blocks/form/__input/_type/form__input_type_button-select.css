@@ -1,0 +1,27 @@
+.form__input_type_button-select {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__input_type_button-select + .button {
+    background-color: transparent;
+    justify-content: flex-start;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
+    background-image: none;
+    padding-right: 48px;
+    box-sizing: border-box;
+}
+
+.form__input_type_button-select:checked + .button {
+    background-color: var(--color-primary);
+    color: var(--color-primary-light);
+    border: none;
+    background-image: url(../../../../images/check.svg);
+    background-size: 24px 16.4px;
+    background-position: right 15.46px top 16.14px;
+    background-repeat: no-repeat;
+}

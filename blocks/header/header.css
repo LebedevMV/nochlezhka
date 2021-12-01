@@ -4,5 +4,4 @@
   background-color: var(--color-accident);
   display: flex;
   justify-content: space-between;
-  position: fixed;
 }

@@ -9,6 +9,65 @@
 </head>
 <body class="page">
   <header class="header"></header>
-  <main class="content"></main>
+  <main class="content">
+    <section class="section section_type_form">
+      <div></div>
+      <form class="form">
+        <div class="form__type-container">
+          <p class="form__type">посиделки/вечеринки</p>
+        </div>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label">город</label>
+            <select class="form__input form__input_type_select">
+              <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
+              <option value="moscow">Москва</option>
+              <option value="peter">Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label">название мероприятия</label>
+            <input type="text" class="form__input" placeholder="введите название">
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs form__inputs_type_radio">
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="party_type_open">
+              <input id="party_type_open" value="open" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo_item"></span>
+              <span class="form__label-text">открытое мероприятие</span>
+            </label>
+            <label class="form__label" for="party_type_open">адрес отобразим в карточке события</label>
+          </div>
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="party_type_closed">
+              <input id="party_type_closed" value="closed" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo_item"></span>
+              <span class="form__label-text">закрытое мероприятие</span>
+            </label>
+            <label class="form__label" for="party_type_closed">адрес увидят только, те кому вы оправите ссылку на событие</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label">дата проведения</label>
+            <input type="text" class="form__input" required pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label">контактное лицо</label>
+            <input type="text" class="form__input" placeholder="введите ФИО">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label">телефон для связи с организатором</label>
+            <input type="tel" class="form__input" required pattern="+7([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button class="button button_place_actions button_type_secondary">назад</button>
+          <button class="button button_place_actions button_type_secondary">далее</button>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

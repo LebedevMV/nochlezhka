@@ -2,4 +2,5 @@
   display: grid;
   grid-template-columns: 309px 531px;
   margin: 0 auto;
+  gap: 40px;
 }

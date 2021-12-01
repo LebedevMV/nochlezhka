@@ -9,7 +9,172 @@
 </head>
 <body class="page">
   <header class="header"></header>
-  <main class="content"></main>
-  <footer class="footer"></footer>
+  <main class="content">
+    <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 2 из 4</p>
+        <h2 class="description__title">заполните форму</h2>
+        <p class="description__text">Для участия вы можете выбрать:</p>
+        <ul class="description__list">
+          <li class="description__list-item">определенную позицию из меню группу позиций процент от продаж определенных позиций или всего меню</li>
+          <li class="description__list-item">группу позиций</li>
+          <li class="description__list-item">процент от продаж определенных позиций или всего меню</li>
+        </ul>
+
+      </div>
+      <form class="form" name="form-2-cafe">
+        <div class="form__type-container">
+          <p class="form__type">кафе/бар/ресторан</p>
+        </div>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-cafe_input_city">город</label>
+            <select id="form-2-cafe_input_city" name="city" class="form__input form__input_type_select">
+              <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
+              <option value="moscow">Москва</option>
+              <option value="peter">Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-cafe_input_name">название заведения</label>
+            <input id="form-2-cafe_input_name" name="name" type="text" class="form__input" placeholder="введите название заведения">
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs form__inputs_type_radio">
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="cafe_type_open">
+              <input id="cafe_type_open" checked value="open" name="cafe_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">открытое мероприятие</span>
+            </label>
+            <label class="form__label" for="cafe_type_open">адрес отобразим в карточке события</label>
+          </div>
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="cafe_type_closed">
+              <input id="cafe_type_closed" value="closed" name="cafe_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">закрытое мероприятие</span>
+            </label>
+            <label class="form__label" for="cafe_type_closed">адрес увидят только, те кому вы оправите ссылку на событие</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-cafe_input_date">дата проведения</label>
+            <input id="form-2-cafe_input_date"
+                  name="date"
+                  type="text"
+                  class="form__input"
+                  required pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}"
+                  placeholder="укажите дату в формате дд.мм.гггг">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-cafe_input_contact">контактное лицо</label>
+            <input id="form-2-cafe_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-cafe_input_phone">телефон для связи с организатором</label>
+            <input id="form-2-cafe_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\+\-]*$" value="+7(">
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">назад</button>
+          <button type="button" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <img
+      src="./images/footer_image.svg"
+      alt="человек в кепке пьет горячий напиток"
+      class="footer__illustration"
+    />
+    <div class="footer__column footer__column_org">
+      <h3 class="footer__column-heading">организатор:</h3>
+      <nav>
+        <ul class="footer__column-links">
+          <li>
+            <a href="#" class="footer__column-link"
+              >Ночлежка<img
+                src="./images/icons/ref.svg"
+                alt="иконка стрелка"
+                class="footer__column-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="footer__column-link footer__column-link_org"
+              >info@hedonismfest.ru</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__column footer__column_partners">
+      <h3 class="footer__column-heading">сделано с любовью:</h3>
+      <nav>
+        <ul class="footer__column-links">
+          <li>
+            <a href="#" class="footer__column-link"
+              >Fastsol Digital<img
+                src="./images/icons/ref.svg"
+                alt="иконка стрелка"
+                class="footer__column-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="footer__column-link"
+              >shishki.collective<img
+                src="./images/icons/ref.svg"
+                alt="иконка стрелка"
+                class="footer__column-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="footer__column-link"
+              >студентами Яндекс.Практикума<img
+                src="./images/icons/ref.svg"
+                alt="иконка стрелка"
+                class="footer__column-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__column footer__column_social">
+      <h3 class="footer__column-heading">мы в соцсетях:</h3>
+      <nav>
+        <ul class="footer__column-links footer__column-links_social">
+          <li>
+            <a href="#" class="footer__column-link">
+              <img
+                src="./images/social/facebook.svg"
+                alt="Фейсбук"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__column-link">
+              <img
+                src="./images/social/instagram.svg"
+                alt="Инстаграм"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__column-link">
+              <img
+                src="./images/social/vk.svg"
+                alt="ВКонтакте"
+                class="footer__social-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

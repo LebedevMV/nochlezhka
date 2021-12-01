@@ -1,0 +1,15 @@
+.footer {
+  margin: 0 auto;
+  padding: 80px 40px;
+  background-color: var(--color-light-secondary);
+  display: grid;
+  grid-template-columns: 193px 310px 427px 310px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    display: none;
+  }
+}

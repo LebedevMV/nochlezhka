@@ -20,12 +20,15 @@
       </div>
       <form class="form" name="form-2-party">
         <div class="form__type-container">
-          <p class="form__type">посиделки/вечеринки</p>
+          <label class="form__label form__label_for_button-select" for="form-2-party_type">
+            <input id="form-2-party_type" value="party" name="type" type="radio" checked class="form__input form__input_type_button-select">
+            <button type="button" class="button">посиделки/вечеринки</button>
+          </label>
         </div>
         <fieldset class="form__inputs">
           <div class="form__input-container">
             <label class="form__label" for="form-2-party_input_city">город</label>
-            <select id="form-2-party_input_city" name="city" class="form__input form__input_type_select">
+            <select required id="form-2-party_input_city" name="city" class="form__input form__input_type_select">
               <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
               <option value="moscow">Москва</option>
               <option value="peter">Санкт-Петербург</option>
@@ -33,13 +36,13 @@
           </div>
           <div class="form__input-container">
             <label class="form__label" for="form-2-party_input_name">название мероприятия</label>
-            <input id="form-2-party_input_name" name="name" type="text" class="form__input" placeholder="введите название">
+            <input required id="form-2-party_input_name" name="name" type="text" class="form__input" placeholder="введите название">
           </div>
         </fieldset>
         <fieldset class="form__inputs form__inputs_type_radio">
           <div class="form__input-container form__input-container_type_radio">
             <label class="form__label form__label_for_radio" for="party_type_open">
-              <input id="party_type_open" checked value="open" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <input required id="party_type_open" checked value="open" name="party_type" class="form__input form__input_type_radio" type="radio">
               <span class="form__pseudo-item"></span>
               <span class="form__label-text">открытое мероприятие</span>
             </label>
@@ -47,7 +50,7 @@
           </div>
           <div class="form__input-container form__input-container_type_radio">
             <label class="form__label form__label_for_radio" for="party_type_closed">
-              <input id="party_type_closed" value="closed" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <input required id="party_type_closed" value="closed" name="party_type" class="form__input form__input_type_radio" type="radio">
               <span class="form__pseudo-item"></span>
               <span class="form__label-text">закрытое мероприятие</span>
             </label>
@@ -66,16 +69,16 @@
           </div>
           <div class="form__input-container">
             <label class="form__label" for="form-2-party_input_contact">контактное лицо</label>
-            <input id="form-2-party_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
+            <input required id="form-2-party_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
           </div>
           <div class="form__input-container">
             <label class="form__label" for="form-2-party_input_phone">телефон для связи с организатором</label>
-            <input id="form-2-party_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\+\-]*$" value="+7(">
+            <input required id="form-2-party_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\(\)\+\-]*$" value="+7(">
           </div>
         </fieldset>
         <div class="form__actions">
           <button type="button" class="button button_place_action button_type_secondary">назад</button>
-          <button type="button" class="button button_place_action">далее</button>
+          <button type="submit" class="button button_place_action">далее</button>
         </div>
       </form>
     </section>

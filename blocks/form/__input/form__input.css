@@ -1,0 +1,22 @@
+.form__input {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    padding: 12px 24px;
+    border: 2px solid var(--color-dark-secondary);
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 2px solid var(--color-primary-dark);
+}
+
+.form__input::placeholder {
+    color: var(--color-dark-secondary);
+}

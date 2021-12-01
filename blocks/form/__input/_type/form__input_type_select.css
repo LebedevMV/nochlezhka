@@ -1,0 +1,7 @@
+.form__input_type_select {
+    appearance: none;
+    background-image: url(../../../../images/select.svg);
+    background-repeat: no-repeat;
+    background-size: 13.17px 7.59px;
+    background-position: right 19.41px top 21px;
+}

@@ -1,8 +1,6 @@
 @import url(../vendors/normalize.css);
 @import url(../vendors/fonts/fonts.css);
-
 @import url(../blocks/page/page.css);
-
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__column/footer__column.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);

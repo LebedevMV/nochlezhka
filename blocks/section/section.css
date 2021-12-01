@@ -1,6 +1,3 @@
 .section {
-  display: grid;
-  grid-template-columns: 309px 531px;
-  gap: 40px;
   padding: 0 280px;
 }

@@ -1,0 +1,11 @@
+.page-heading {
+    width: 100%;
+    padding: 40px;
+}
+
+@media screen and (max-width: 320px) {
+    .page-heading {
+      display: none;
+      padding: 20px 20px 40px;
+    }
+}

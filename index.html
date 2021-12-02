@@ -8,9 +8,121 @@
   <title>Ночлежка</title>
 </head>
 <body class="page">
-  <header class="header"></header>
+  <header class="header">
+    <div class="header__logo-location">
+      <img
+        src="./images/logo.svg"
+        class="logo link"
+        alt="логотип фестиваля Гедонизмфест"
+      />
+      <button
+        class="button button_type_secondary button_type_noborder"
+        type="button"
+      >
+        <img
+          src="./images/icons/geo.svg"
+          class="header__geo-icon"
+          alt="значок геолокации"
+        />Санкт-Петербург
+      </button>
+    </div>
+
+    <div class="header__navigation">
+      <nav>
+        <ul class="header__links">
+          <li>
+            <a href="#" class="header__link link">куда&nbsp;пойти</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">стать&nbsp;участником</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">о&nbsp;фестивале</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__user-actions">
+      <button
+        type="button"
+        class="button button_type_secondary button_type_noborder"
+        aria-label="поставить отметку 'хочу пойти'"
+      >
+        <img
+          src="./images/icons/like.svg"
+          alt=""
+          class="header__heart-icon"
+        />хочу пойти
+      </button>
+      <button type="button" class="button" aria-label="поддержать проект">
+        поддержать
+      </button>
+      <img
+        src="./images/icons/menu_burger.svg"
+        alt="иконка меню"
+        class="header__menu"
+      />
+    </div>
+  </header>
   <main class="content">
-    <h1 class="heading">стать участником</h1>
+    <h1 class="heading page__header">стать&nbsp;участником</h1>
+    <section class="section section_type_participants">
+      <div class="description">
+        <h2 class="description__title">как&nbsp;участвовать?</h2>
+        <ul class="table page__table">
+          <li class="table__cell">
+            <p class="description__subtitle table__number">1</p>
+            <h3 class="description__subtitle table__heading">выбор категории</h3>
+            <p class="description__text table__text">
+              Определите, как вы хотите поддержать акцию: продавать напитки,
+              блюда, провести мастер-класс или каким-то другим способом
+            </p>
+          </li>
+          <li class="table__cell">
+            <p class="description__subtitle table__number">2</p>
+            <h3 class="description__subtitle table__heading">фото и описание</h3>
+            <p class="description__text table__text">
+              Подготовьте описание и фото вашего заведения. Это нужно для создания
+              карточки в нашем каталоге событий
+            </p>
+          </li>
+          <li class="table__cell">
+            <p class="description__subtitle table__number">3</p>
+            <h3 class="description__subtitle table__heading">ссылки и соцсети</h3>
+            <p class="description__text table__text">
+              Опубликуйте ссылку на вашу карточку в соцсетях, расскажите у себя на
+              сайте, чтобы больше людей узнали о вашем участии
+            </p>
+          </li>
+          <li class="table__cell">
+            <p class="description__subtitle table__number">4</p>
+            <h3 class="description__subtitle table__heading">координатор</h3>
+            <p class="description__text table__text">
+              Далее с вами свяжется координатор акции, который будет помогать по
+              любым вопросам до и во время акции
+            </p>
+          </li>
+          <li class="table__cell">
+            <p class="description__subtitle table__number">5</p>
+            <h3 class="description__subtitle table__heading">перевод средств</h3>
+            <p class="description__text table__text">
+              После акции переведите собранные пожертвования в Ночлежку через сайт
+              или по безналичному расчету
+            </p>
+          </li>
+        </ul>
+
+        <div class="table__button">
+          <button type="button" class="button" aria-label="заполнить форму">
+            заполнить форму
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
     <section class="section section_type_form">
       <div class="description">
         <p class="description__text">шаг 2 из 4</p>
@@ -220,11 +332,15 @@
       class="footer__illustration"
     />
     <div class="footer__column footer__column_org">
-      <h3 class="footer__column-heading">организатор:</h3>
+      <h3 class="description__subtitle footer__column-heading">
+        организатор:
+      </h3>
       <nav>
         <ul class="footer__column-links">
           <li>
-            <a href="#" class="footer__column-link"
+            <a
+              href="https://homeless.ru/"
+              class="description__text footer__column-link link"
               >Ночлежка<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -232,7 +348,13 @@
             /></a>
           </li>
           <li>
-            <a href="#" class="footer__column-link footer__column-link_org"
+            <a
+              href="mailto:info@hedonismfest.ru"
+              class="
+                description__text
+                footer__column-link footer__column-link_org
+                link
+              "
               >info@hedonismfest.ru</a
             >
           </li>
@@ -240,11 +362,13 @@
       </nav>
     </div>
     <div class="footer__column footer__column_partners">
-      <h3 class="footer__column-heading">сделано с любовью:</h3>
+      <h3 class="description__subtitle footer__column-heading">
+        сделано с любовью:
+      </h3>
       <nav>
         <ul class="footer__column-links">
           <li>
-            <a href="#" class="footer__column-link"
+            <a href="#" class="description__text footer__column-link link"
               >Fastsol Digital<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -252,7 +376,9 @@
             /></a>
           </li>
           <li>
-            <a href="#" class="footer__column-link"
+            <a
+              href="https://shishki.co/"
+              class="description__text footer__column-link link"
               >shishki.collective<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -260,7 +386,9 @@
             /></a>
           </li>
           <li>
-            <a href="#" class="footer__column-link"
+            <a
+              href="https://practicum.yandex.ru/"
+              class="description__text footer__column-link link"
               >студентами Яндекс.Практикума<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -271,11 +399,17 @@
       </nav>
     </div>
     <div class="footer__column footer__column_social">
-      <h3 class="footer__column-heading">мы в соцсетях:</h3>
+      <h3
+        class="
+          description__subtitle
+          footer__column-heading footer__column-heading_social
+        ">
+        мы в соцсетях:
+      </h3>
       <nav>
         <ul class="footer__column-links footer__column-links_social">
           <li>
-            <a href="#" class="footer__column-link">
+            <a href="#" class="footer__column-link link">
               <img
                 src="./images/social/facebook.svg"
                 alt="Фейсбук"
@@ -284,7 +418,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="footer__column-link">
+            <a href="#" class="footer__column-link link">
               <img
                 src="./images/social/instagram.svg"
                 alt="Инстаграм"
@@ -293,7 +427,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="footer__column-link">
+            <a href="#" class="footer__column-link link">
               <img
                 src="./images/social/vk.svg"
                 alt="ВКонтакте"

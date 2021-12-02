@@ -1,3 +1,4 @@
 .footer__column-icon {
-    margin-left: 8px;
-  }
+  margin-left: 8px;
+  vertical-align: middle;
+}

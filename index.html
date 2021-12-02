@@ -18,46 +18,28 @@
         <p class="description__text">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
         <p class="description__text">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
       </div>
-      <form class="form" name="form-2-party">
+      <form class="form" name="form-2-other">
         <div class="form__type-container">
-          <p class="form__type">посиделки/вечеринки</p>
+          <p class="form__type">другое</p>
         </div>
         <fieldset class="form__inputs">
           <div class="form__input-container">
-            <label class="form__label" for="form-2-party_input_city">город</label>
-            <select id="form-2-party_input_city" name="city" class="form__input form__input_type_select">
+            <label class="form__label" for="form-2-other_input_city">город</label>
+            <select id="form-2-other_input_city" name="city" class="form__input form__input_type_select">
               <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
               <option value="moscow">Москва</option>
               <option value="peter">Санкт-Петербург</option>
             </select>
           </div>
           <div class="form__input-container">
-            <label class="form__label" for="form-2-party_input_name">название мероприятия</label>
-            <input id="form-2-party_input_name" name="name" type="text" class="form__input" placeholder="введите название">
-          </div>
-        </fieldset>
-        <fieldset class="form__inputs form__inputs_type_radio">
-          <div class="form__input-container form__input-container_type_radio">
-            <label class="form__label form__label_for_radio" for="party_type_open">
-              <input id="party_type_open" checked value="open" name="party_type" class="form__input form__input_type_radio" type="radio">
-              <span class="form__pseudo-item"></span>
-              <span class="form__label-text">открытое мероприятие</span>
-            </label>
-            <label class="form__label" for="party_type_open">адрес отобразим в карточке события</label>
-          </div>
-          <div class="form__input-container form__input-container_type_radio">
-            <label class="form__label form__label_for_radio" for="party_type_closed">
-              <input id="party_type_closed" value="closed" name="party_type" class="form__input form__input_type_radio" type="radio">
-              <span class="form__pseudo-item"></span>
-              <span class="form__label-text">закрытое мероприятие</span>
-            </label>
-            <label class="form__label" for="party_type_closed">адрес увидят только, те кому вы оправите ссылку на событие</label>
+            <label class="form__label" for="form-2-other_input_name">название мероприятия</label>
+            <input id="form-2-other_input_name" name="name" type="text" class="form__input" placeholder="введите название">
           </div>
         </fieldset>
         <fieldset class="form__inputs">
           <div class="form__input-container">
-            <label class="form__label" for="form-2-party_input_date">дата проведения</label>
-            <input id="form-2-party_input_date"
+            <label class="form__label" for="form-2-other_input_date">дата проведения</label>
+            <input id="form-2-other_input_date"
                   name="date"
                   type="text"
                   class="form__input"
@@ -65,12 +47,12 @@
                   placeholder="укажите дату в формате дд.мм.гггг">
           </div>
           <div class="form__input-container">
-            <label class="form__label" for="form-2-party_input_contact">контактное лицо</label>
-            <input id="form-2-party_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
+            <label class="form__label" for="form-2-other_input_contact">контактное лицо</label>
+            <input id="form-2-other_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
           </div>
           <div class="form__input-container">
-            <label class="form__label" for="form-2-party_input_phone">телефон для связи с организатором</label>
-            <input id="form-2-party_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\+\-]*$" value="+7(">
+            <label class="form__label" for="form-2-other_input_phone">телефон для связи с организатором</label>
+            <input id="form-2-other_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\+\-]*$" value="+7(">
           </div>
         </fieldset>
         <div class="form__actions">

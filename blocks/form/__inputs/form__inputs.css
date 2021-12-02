@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 20px 0;
+  padding: 20px 0 0;
   border: none;
   box-shadow: inset 0px -1px 0px var(--color-light-secondary);
+  margin: 0;
 }
 
 .form__inputs:last-of-type {

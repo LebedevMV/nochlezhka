@@ -1,3 +1,5 @@
 .form__input_type_textarea {
     resize: none;
+    min-height: 132px;
+    border-radius: 24px;
 }

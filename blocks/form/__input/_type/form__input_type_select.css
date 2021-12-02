@@ -5,3 +5,7 @@
     background-size: 13.17px 7.59px;
     background-position: right 19.41px top 21px;
 }
+
+.form__input_type_select:invalid {
+  color: var(--color-dark-secondary);
+}

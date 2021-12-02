@@ -1,0 +1,6 @@
+.form__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 12px;
+}

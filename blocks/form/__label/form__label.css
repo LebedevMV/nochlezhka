@@ -1,5 +1,7 @@
 .form__label {
-    display: flex;
-    flex-direction: row;
-    gap: 9px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 0 24px;
+    color: var(--color-dark-secondary);
 }

@@ -1,0 +1,16 @@
+.heading {
+  font-family: "TT Firs Neue";
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: var(--color-primary-dark);
+}
+
+@media screen and (max-width: 320px) {
+  .heading {
+    font-size: 44px;
+    line-height: 44px;
+  }
+}

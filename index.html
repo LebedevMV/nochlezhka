@@ -65,7 +65,59 @@
         />
       </div>
     </header>
-    <main class="content"></main>
+
+    <main class="content">
+      <h1 class="heading page__header">стать участником</h1>
+      <h2 class="description__title page__subheader">как участвовать?</h2>
+      <ul class="table page__table">
+        <li class="table__cell">
+          <p class="description__subtitle table__number">1</p>
+          <h3 class="description__subtitle table__heading">выбор категории</h3>
+          <p class="description__text table__text">
+            Определите, как вы хотите поддержать акцию: продавать напитки,
+            блюда, провести мастер-класс или каким-то другим способом
+          </p>
+        </li>
+        <li class="table__cell">
+          <p class="description__subtitle table__number">2</p>
+          <h3 class="description__subtitle table__heading">фото и описание</h3>
+          <p class="description__text table__text">
+            Подготовьте описание и фото вашего заведения. Это нужно для создания
+            карточки в нашем каталоге событий
+          </p>
+        </li>
+        <li class="table__cell">
+          <p class="description__subtitle table__number">3</p>
+          <h3 class="description__subtitle table__heading">ссылки и соцсети</h3>
+          <p class="description__text table__text">
+            Опубликуйте ссылку на вашу карточку в соцсетях, расскажите у себя на
+            сайте, чтобы больше людей узнали о вашем участии
+          </p>
+        </li>
+        <li class="table__cell">
+          <p class="description__subtitle table__number">4</p>
+          <h3 class="description__subtitle table__heading">координатор</h3>
+          <p class="description__text table__text">
+            Далее с вами свяжется координатор акции, который будет помогать по
+            любым вопросам до и во время акции
+          </p>
+        </li>
+        <li class="table__cell">
+          <p class="description__subtitle table__number">5</p>
+          <h3 class="description__subtitle table__heading">перевод средств</h3>
+          <p class="description__text table__text">
+            После акции переведите собранные пожертвования в Ночлежку через сайт
+            или по безналичному расчету
+          </p>
+        </li>
+      </ul>
+      <div class="table__button">
+        <button type="button" class="button" aria-label="заполнить форму">
+          заполнить форму
+        </button>
+      </div>
+    </main>
+
     <footer class="footer">
       <img
         src="./images/footer_image.svg"
@@ -73,11 +125,15 @@
         class="footer__illustration"
       />
       <div class="footer__column footer__column_org">
-        <h3 class="footer__column-heading">организатор:</h3>
+        <h3 class="description__subtitle footer__column-heading">
+          организатор:
+        </h3>
         <nav>
           <ul class="footer__column-links">
             <li>
-              <a href="#" class="footer__column-link"
+              <a
+                href="https://homeless.ru/"
+                class="description__text footer__column-link link"
                 >Ночлежка<img
                   src="./images/icons/ref.svg"
                   alt="иконка стрелка"
@@ -85,7 +141,13 @@
               /></a>
             </li>
             <li>
-              <a href="#" class="footer__column-link footer__column-link_org"
+              <a
+                href="mailto:info@hedonismfest.ru"
+                class="
+                  description__text
+                  footer__column-link footer__column-link_org
+                  link
+                "
                 >info@hedonismfest.ru</a
               >
             </li>
@@ -93,11 +155,13 @@
         </nav>
       </div>
       <div class="footer__column footer__column_partners">
-        <h3 class="footer__column-heading">сделано с любовью:</h3>
+        <h3 class="description__subtitle footer__column-heading">
+          сделано с любовью:
+        </h3>
         <nav>
           <ul class="footer__column-links">
             <li>
-              <a href="#" class="footer__column-link"
+              <a href="#" class="description__text footer__column-link link"
                 >Fastsol Digital<img
                   src="./images/icons/ref.svg"
                   alt="иконка стрелка"
@@ -105,7 +169,9 @@
               /></a>
             </li>
             <li>
-              <a href="#" class="footer__column-link"
+              <a
+                href="https://shishki.co/"
+                class="description__text footer__column-link link"
                 >shishki.collective<img
                   src="./images/icons/ref.svg"
                   alt="иконка стрелка"
@@ -113,7 +179,9 @@
               /></a>
             </li>
             <li>
-              <a href="#" class="footer__column-link"
+              <a
+                href="https://practicum.yandex.ru/"
+                class="description__text footer__column-link link"
                 >студентами Яндекс.Практикума<img
                   src="./images/icons/ref.svg"
                   alt="иконка стрелка"
@@ -124,11 +192,18 @@
         </nav>
       </div>
       <div class="footer__column footer__column_social">
-        <h3 class="footer__column-heading">мы в соцсетях:</h3>
+        <h3
+          class="
+            description__subtitle
+            footer__column-heading footer__column-heading_social
+          "
+        >
+          мы в соцсетях:
+        </h3>
         <nav>
           <ul class="footer__column-links footer__column-links_social">
             <li>
-              <a href="#" class="footer__column-link">
+              <a href="#" class="footer__column-link link">
                 <img
                   src="./images/social/facebook.svg"
                   alt="Фейсбук"
@@ -137,7 +212,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="footer__column-link">
+              <a href="#" class="footer__column-link link">
                 <img
                   src="./images/social/instagram.svg"
                   alt="Инстаграм"
@@ -146,7 +221,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="footer__column-link">
+              <a href="#" class="footer__column-link link">
                 <img
                   src="./images/social/vk.svg"
                   alt="ВКонтакте"

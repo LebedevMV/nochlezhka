@@ -1,0 +1,6 @@
+.table__cell {
+  display: grid;
+  grid-template-columns: 117px 346px 417px;
+  padding: 20px 0;
+  box-shadow: inset 0px -1px 0px #ebe9ed;
+}

@@ -6,3 +6,10 @@
     gap: 12px;
     color: var(--color-primary-dark);
 }
+
+@media screen and (max-width: 880px) {
+  .description {
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+}

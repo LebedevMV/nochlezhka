@@ -8,3 +8,11 @@
     padding: 0;
     margin: 0;
 }
+
+@media screen and (max-width: 880px) {
+  .description__title {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: normal;
+  }
+}

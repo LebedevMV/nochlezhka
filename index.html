@@ -10,7 +10,189 @@
 <body class="page">
   <header class="header"></header>
   <main class="content">
-    
+    <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 2 из 4</p>
+        <h2 class="description__title">заполните форму</h2>
+        <p class="description__text">Организуйте свою посиделку, вечеринку или концерт.</p>
+        <p class="description__text">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
+        <p class="description__text">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
+      </div>
+      <form class="form" name="form-2-party">
+        <div class="form__type-container">
+          <label class="form__label form__label_for_button-select" for="form-2-party_type">
+            <input id="form-2-party_type" value="party" name="type" type="radio" checked class="form__input form__input_type_button-select">
+            <button type="button" class="button">посиделки/вечеринки</button>
+          </label>
+        </div>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_city">город</label>
+            <select required id="form-2-party_input_city" name="city" class="form__input form__input_type_select">
+              <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
+              <option value="moscow">Москва</option>
+              <option value="peter">Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_name">название мероприятия</label>
+            <input required id="form-2-party_input_name" name="name" type="text" class="form__input" placeholder="введите название">
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs form__inputs_type_radio">
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="party_type_open">
+              <input required id="party_type_open" checked value="open" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">открытое мероприятие</span>
+            </label>
+            <label class="form__label" for="party_type_open">адрес отобразим в карточке события</label>
+          </div>
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="party_type_closed">
+              <input required id="party_type_closed" value="closed" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">закрытое мероприятие</span>
+            </label>
+            <label class="form__label" for="party_type_closed">адрес увидят только, те кому вы оправите ссылку на событие</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_date">дата проведения</label>
+            <input id="form-2-party_input_date"
+                  name="date"
+                  type="text"
+                  class="form__input"
+                  required pattern="([0-2][0-9]|3[0-1]).(0[0-9]|1[0-2]).[0-9]{4}"
+                  placeholder="укажите дату в формате дд.мм.гггг">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_contact">контактное лицо</label>
+            <input required id="form-2-party_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_phone">телефон для связи с организатором</label>
+            <input required id="form-2-party_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\(\)\+\-]*$" value="+7(">
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">назад</button>
+          <button type="submit" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
+    <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 3 из 4</p>
+        <h2 class="description__title">укажите контакты и часы работы</h2>
+        <p class="description__text">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
+      </div>
+      <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 2 из 4</p>
+        <h2 class="description__title">заполните форму</h2>
+        <p class="description__text">Организуйте свою посиделку, вечеринку или концерт.</p>
+        <p class="description__text">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
+        <p class="description__text">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
+      </div>
+      <form class="form" name="form-2-party">
+        <div class="form__type-container">
+          <label class="form__label form__label_for_button-select" for="form-2-party_type">
+            <input id="form-2-party_type" value="party" name="type" type="radio" checked class="form__input form__input_type_button-select">
+            <button type="button" class="button">посиделки/вечеринки</button>
+          </label>
+        </div>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_city">город</label>
+            <select required id="form-2-party_input_city" name="city" class="form__input form__input_type_select">
+              <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
+              <option value="moscow">Москва</option>
+              <option value="peter">Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_name">название мероприятия</label>
+            <input required id="form-2-party_input_name" name="name" type="text" class="form__input" placeholder="введите название">
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs form__inputs_type_radio">
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="party_type_open">
+              <input required id="party_type_open" checked value="open" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">открытое мероприятие</span>
+            </label>
+            <label class="form__label" for="party_type_open">адрес отобразим в карточке события</label>
+          </div>
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="party_type_closed">
+              <input required id="party_type_closed" value="closed" name="party_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">закрытое мероприятие</span>
+            </label>
+            <label class="form__label" for="party_type_closed">адрес увидят только, те кому вы оправите ссылку на событие</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_date">дата проведения</label>
+            <input id="form-2-party_input_date"
+                  name="date"
+                  type="text"
+                  class="form__input"
+                  required pattern="([0-2][0-9]|3[0-1]).(0[0-9]|1[0-2]).[0-9]{4}"
+                  placeholder="укажите дату в формате дд.мм.гггг">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_contact">контактное лицо</label>
+            <input required id="form-2-party_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-party_input_phone">телефон для связи с организатором</label>
+            <input required id="form-2-party_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\(\)\+\-]*$" value="+7(">
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">назад</button>
+          <button type="submit" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
+      <form class="form" name="form-3-cafe">
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_time">часы работы заведения</label>
+            <input id="form-3-cafe_input_time" name="time" type="text" class="form__input" required pattern="([0-1][0-9]|2[0-3]):[0-5][0-9]-([0-1][0-9]|2[0-3]):[0-5][0-9]" placeholder="например: 10:00-13:00, 13:00-19:00">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_address">адрес заведения</label>
+            <textarea class="form__input form__input_type_textarea" required id="form-3-cafe_input_address" name="address" type="text" rows="1" class="form__input" placeholder="каждый адрес с новой строки"></textarea>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_tel">номер телефона заведения</label>
+            <input id="form-3-cafe_input_tel" name="phone" type="tel" class="form__input" required pattern="^[0-9\(\)\+\-]*$" value="+7(">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_site">ссылка на сайт</label>
+            <input required id="form-3-cafe_input_site" name="site" type="text" class="form__input" value="https://">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_social">ссылки на соцсети</label>
+            <textarea class="form__input form__input_type_textarea" required id="form-3-cafe_input_social" name="social" type="text" rows="1" class="form__input" placeholder="каждую ссылку с новой строки"></textarea>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_description">описание</label>
+            <textarea class="form__input form__input_type_textarea" required id="form-3-cafe_input_description" name="description" type="text" rows="3" class="form__input" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">назад</button>
+          <button type="submit" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <img

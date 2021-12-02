@@ -9,7 +9,47 @@
 </head>
 <body class="page">
   <header class="header"></header>
-  <main class="content"></main>
+  <main class="content">
+    <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 3 из 4</p>
+        <h2 class="description__title">укажите контакты и часы работы</h2>
+        <p class="description__text">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
+      </div>
+      <form class="form" name="form-3-cafe">
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_time">часы работы заведения</label>
+            <input id="form-3-cafe_input_time" name="time" type="text" class="form__input" required pattern="([0-1][0-9]|2[0-3]):[0-5][0-9]-([0-1][0-9]|2[0-3]):[0-5][0-9]" placeholder="например: 10:00-13:00, 13:00-19:00">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_address">адрес заведения</label>
+            <textarea class="form__input form__input_type_textarea" required id="form-3-cafe_input_address" name="address" type="text" rows="1" class="form__input" placeholder="каждый адрес с новой строки"></textarea>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_tel">номер телефона заведения</label>
+            <input id="form-3-cafe_input_tel" name="phone" type="tel" class="form__input" required pattern="^[0-9\(\)\+\-]*$" value="+7(">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_site">ссылка на сайт</label>
+            <input required id="form-3-cafe_input_site" name="site" type="text" class="form__input" value="https://">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_social">ссылки на соцсети</label>
+            <textarea class="form__input form__input_type_textarea" required id="form-3-cafe_input_social" name="social" type="text" rows="1" class="form__input" placeholder="каждую ссылку с новой строки"></textarea>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-cafe_input_description">описание</label>
+            <textarea class="form__input form__input_type_textarea" required id="form-3-cafe_input_description" name="description" type="text" rows="3" class="form__input" placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон "></textarea>
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">назад</button>
+          <button type="submit" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
+  </main>
   <footer class="footer">
     <img
       src="./images/footer_image.svg"

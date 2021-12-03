@@ -1,7 +1,5 @@
 .footer__column-link {
   margin-bottom: 24px;
   display: inline-block;
-  text-decoration: none;
-  color: var(--color-primary-dark);
   font-weight: 500;
 }

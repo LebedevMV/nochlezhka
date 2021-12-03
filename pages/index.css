@@ -20,9 +20,10 @@
 @import url(../blocks/section/section.css);
 @import url(../blocks/section/_type/section_type_form.css);
 @import url(../blocks/description/description.css);
-@import url(../blocks/description/__text/description__text.css);
-@import url(../blocks/description/__title/description__title.css);
-@import url(../blocks/description/__subtitle/description__subtitle.css);
+
+@import url(../blocks/subtitle/subtitle.css);
+@import url(../blocks/line-heading/line-heading.css);
+@import url(../blocks/paragraph/paragraph.css);
 
 @import url(../blocks/table/table.css);
 @import url(../blocks//table/__button/table__button.css);

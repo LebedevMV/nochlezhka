@@ -26,7 +26,6 @@
         />Санкт-Петербург
       </button>
     </div>
-
     <div class="header__navigation">
       <nav>
         <ul class="header__links">
@@ -66,7 +65,7 @@
     </div>
   </header>
   <main class="content">
-    <h1 class="heading page__header">стать&nbsp;участником</h1>
+    <h1 class="heading content__header">стать&nbsp;участником</h1>
     <section class="section section_type_participants">
       <h2 class="subtitle">как&nbsp;участвовать?</h2>
       <ul class="table page__table">
@@ -111,17 +110,85 @@
           </p>
         </li>
       </ul>
-      <div class="table__button">
+      <div class="section__buttons">
         <button type="button" class="button" aria-label="заполнить форму">
           заполнить форму
         </button>
       </div>
     </section>
-
+    <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 2 из 4</p>
+        <h2 class="description__title">заполните форму</h2>
+        <p class="description__text">Определитесь с типом мероприятия — лекция, консультация или мастер-класс.</p>
+        <p class="description__text">Когда люди удут покупать билеты, вам будут приходить уведомления на электронную почту</p>
+      </div>
+      <form class="form" name="form-2-lecture">
+        <div class="form__type-container">
+          <label class="form__label form__label_for_button-select" for="form-2-lecture_type">
+            <input id="form-2-lecture_type" value="lecture" name="type" type="radio" checked class="form__input form__input_type_button-select">
+            <button type="button" class="button">мастер-класс/лекция</button>
+          </label>
+        </div>
+        <fieldset class="form__inputs form__inputs_type_radio">
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="lecture_type_open">
+              <input required id="lecture_type_open" checked value="open" name="lecture_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">онлайн</span>
+            </label>
+          </div>
+          <div class="form__input-container form__input-container_type_radio">
+            <label class="form__label form__label_for_radio" for="lecture_type_closed">
+              <input required id="lecture_type_closed" value="closed" name="lecture_type" class="form__input form__input_type_radio" type="radio">
+              <span class="form__pseudo-item"></span>
+              <span class="form__label-text">оффлайн</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-lecture_input_city">город</label>
+            <select required id="form-2-lecture_input_city" name="city" class="form__input form__input_type_select">
+              <option class="form__select-placeholder" disabled selected value="">выберите из списка</option>
+              <option value="moscow">Москва</option>
+              <option value="peter">Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-lecture_input_name">название мероприятия</label>
+            <input required id="form-2-lecture_input_name" name="name" type="text" class="form__input" placeholder="введите название">
+          </div>
+        </fieldset>
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-lecture_input_date">дата проведения</label>
+            <input id="form-2-lecture_input_date"
+                  name="date"
+                  type="text"
+                  class="form__input"
+                  required pattern="([0-2][0-9]|3[0-1]).(0[0-9]|1[0-2]).[0-9]{4}"
+                  placeholder="укажите дату в формате дд.мм.гггг">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-lecture_input_contact">контактное лицо</label>
+            <input required id="form-2-lecture_input_contact" name="contact" type="text" class="form__input" placeholder="введите ФИО">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-2-lecture_input_phone">телефон для связи с организатором</label>
+            <input required id="form-2-lecture_input_phone" name="phone" type="tel" class="form__input" required pattern="^[0-9\(\+\)\-]*$" value="+7(">
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">назад</button>
+          <button type="submit" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
     <section class="section section_type_form">
       <div class="description">
         <p class="paragraph">шаг 2 из 4</p>
-        <h2 class="description__title">заполните форму</h2>
+        <h2 class="subtitle">заполните форму</h2>
         <p class="paragraph">Организуйте свою посиделку, вечеринку или концерт.</p>
         <p class="paragraph">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
         <p class="paragraph">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
@@ -193,7 +260,7 @@
     <section class="section section_type_form">
       <div class="description">
         <p class="paragraph">шаг 2 из 4</p>
-        <h2 class="description__title">заполните форму</h2>
+        <h2 class="subtitle">заполните форму</h2>
         <p class="paragraph">Организуйте свою посиделку, вечеринку или концерт.</p>
         <p class="paragraph">Пригласите друзей и тех, кто захочет помочь Ночлежке.</p>
         <p class="paragraph">Установите пожертвование, например кусочек пирога за любую комфортную сумму</p>
@@ -247,7 +314,7 @@
     <section class="section section_type_form">
       <div class="description">
         <p class="paragraph">шаг 3 из 4</p>
-        <h2 class="description__title">укажите контакты и часы работы</h2>
+        <h2 class="subtitle">укажите контакты и часы работы</h2>
         <p class="paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
       </div>
       <form class="form" name="form-3-cafe">
@@ -286,7 +353,7 @@
     <section class="section section_type_form">
       <div class="description">
         <p class="paragraph">шаг 3 из 4</p>
-        <h2 class="description__title">укажите контакты и часы работы</h2>
+        <h2 class="subtitle">укажите контакты и часы работы</h2>
         <p class="paragraph">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
       </div>
       <form class="form" name="form-3-lecture">
@@ -327,15 +394,11 @@
       class="footer__illustration"
     />
     <div class="footer__column footer__column_org">
-      <h3 class="line-heading footer__column-heading">
-        организатор:
-      </h3>
+      <h3 class="footer__column-heading">организатор:</h3>
       <nav>
         <ul class="footer__column-links">
           <li>
-            <a
-              href="https://homeless.ru/"
-              class="paragraph link footer__column-link"
+            <a href="#" class="link footer__column-link"
               >Ночлежка<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -343,12 +406,7 @@
             /></a>
           </li>
           <li>
-            <a
-              href="mailto:info@hedonismfest.ru"
-              class="
-              paragraph
-                link footer__column-link footer__column-link_org
-              "
+            <a href="#" class="footer__column-link footer__column-link_org"
               >info@hedonismfest.ru</a
             >
           </li>
@@ -362,7 +420,7 @@
       <nav>
         <ul class="footer__column-links">
           <li>
-            <a href="#" class="paragraph link footer__column-link"
+            <a href="#" class="link footer__column-link"
               >Fastsol Digital<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -370,9 +428,7 @@
             /></a>
           </li>
           <li>
-            <a
-              href="https://shishki.co/"
-              class="paragraph link footer__column-link"
+            <a href="#" class="link footer__column-link"
               >shishki.collective<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -380,9 +436,7 @@
             /></a>
           </li>
           <li>
-            <a
-              href="https://practicum.yandex.ru/"
-              class="paragraph link footer__column-link"
+            <a href="#" class="link footer__column-link"
               >студентами Яндекс.Практикума<img
                 src="./images/icons/ref.svg"
                 alt="иконка стрелка"
@@ -403,7 +457,7 @@
       <nav>
         <ul class="footer__column-links footer__column-links_social">
           <li>
-            <a href="#" class="link footer__column-link">
+            <a href="#" class="footer__column-link">
               <img
                 src="./images/social/facebook.svg"
                 alt="Фейсбук"
@@ -412,7 +466,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="link footer__column-link">
+            <a href="#" class="footer__column-link">
               <img
                 src="./images/social/instagram.svg"
                 alt="Инстаграм"
@@ -421,7 +475,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="link footer__column-link">
+            <a href="#" class="footer__column-link">
               <img
                 src="./images/social/vk.svg"
                 alt="ВКонтакте"

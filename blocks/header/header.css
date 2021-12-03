@@ -17,7 +17,15 @@
   }
 }
 
+@media screen and (max-width: 1040px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .header {
+    min-height: 68px;
+    justify-content: space-between;
   }
 }

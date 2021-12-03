@@ -4,3 +4,9 @@
   gap: 9px;
   color: var(--color-dark-secondary);
 }
+
+@media screen and (max-width: 880px) {
+  .form__label_for_radio {
+    gap: 4.83px;
+  }
+}

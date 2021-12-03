@@ -1,3 +1,10 @@
 .section {
-  padding: 0 280px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 880px) {
+  .section {
+    height: calc(100vh - 84px);
+    overflow-y: scroll;
+  }
 }

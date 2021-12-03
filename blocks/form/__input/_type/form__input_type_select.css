@@ -9,3 +9,10 @@
 .form__input_type_select:invalid {
   color: var(--color-dark-secondary);
 }
+
+@media screen and (max-width: 880px) {
+  .form__input_type_select {
+    background-size: 10.98px 6.32px;
+    background-position: top 19.5px right 18.18px;
+  }
+}

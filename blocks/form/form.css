@@ -1,5 +1,4 @@
 .form {
-  min-width: 531px;
   display: flex;
   flex-direction: column;
 }

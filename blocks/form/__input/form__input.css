@@ -1,7 +1,7 @@
 .form__input {
     background-color: transparent;
     color: var(--color-primary-dark);
-    padding: 12px 24px;
+    padding: 10px 22px;
     border: 2px solid var(--color-dark-secondary);
     border-radius: 26px;
     display: flex;

@@ -21,16 +21,13 @@
 @import url(../blocks/section/section.css);
 @import url(../blocks/section/_type/section_type_form.css);
 @import url(../blocks/description/description.css);
-
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/line-heading/line-heading.css);
 @import url(../blocks/paragraph/paragraph.css);
-
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/section/__buttons/section__buttons.css);
 @import url(../blocks/section/__table/section__table.css);
-
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__type-container/form__type-container.css);
 @import url(../blocks/form/__label/form__label.css);

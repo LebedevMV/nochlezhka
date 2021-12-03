@@ -3,9 +3,29 @@
   padding: 80px 40px;
   background-color: var(--color-light-secondary);
   display: grid;
-  grid-template-columns: 193px 310px 427px 310px;
+  grid-template-columns: min-content 310px 427px 310px;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1240px) {
+  .footer {
+    grid-template-columns: 310px 427px min-content;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .footer {
+    grid-template-columns: 310px min-content;
+    padding: 40px 20px;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer {
+    grid-template-columns: min-content;
+  }
 }
 
 @media screen and (max-width: 320px) {

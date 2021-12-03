@@ -1,7 +1,7 @@
 .page {
   margin: 0 auto;
-  max-width: 1440px;
-  font-family: 'TT Firs Neue';
+  max-width: 100%;
+  font-family: "TT Firs Neue";
   --color-primary: #7100ff;
   --color-primary-dark: #3b3748;
   --color-primary-light: #fcfaf7;

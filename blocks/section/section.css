@@ -1,5 +1,6 @@
 .section {
   box-sizing: border-box;
+  width: 100%;
 }
 
 @media screen and (max-width: 940px) {

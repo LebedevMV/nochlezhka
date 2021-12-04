@@ -59,10 +59,9 @@
 @import url(../blocks/form/__pseudo-item/form__pseudo-item.css);
 @import url(../blocks/form/__label-text/form__label-text.css);
 @import url(../blocks/form/__actions/form__actions.css);
-
-@import url(../blocks/footer/footer.css);
 @import url(../blocks/section/section.css);
 @import url(../blocks/section/_type/section_type_form.css);
+@import url(../blocks/section/_hidden/section_hidden.css);
 @import url(../blocks/description/description.css);
 @import url(../blocks/description/__text/description__text.css);
 @import url(../blocks/description/__title/description__title.css);
@@ -72,11 +71,11 @@
 @import url(../blocks/form/__input/form__input.css);
 @import url(../blocks/form/__input/_type/form__input_type_textarea.css);
 @import url(../blocks/form/__actions/form__actions.css);
-@import url(../blocks/button/button.css);
-@import url(../blocks/button/_place/button_place_action.css);
-@import url(../blocks/button/_type/button_type_secondary.css);
+@import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__column/footer__column.css);
+@import url(../blocks/footer/__column/_type/footer__column_type_org.css);
 @import url(../blocks/footer/__column/_type/footer__column_type_partners.css);
+@import url(../blocks/footer/__column/_type/footer__column_type_social.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-heading/_social/footer__column-heading_social.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
@@ -86,5 +85,4 @@
 @import url(../blocks/footer/__column-icon/footer__column-icon.css);
 @import url(../blocks/footer/__illustration/footer__illustration.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-
 @import url(../blocks/header/__button/header__button.css);

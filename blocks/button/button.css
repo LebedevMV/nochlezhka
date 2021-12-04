@@ -10,11 +10,21 @@
   font-size: 18px;
   line-height: 24px;
   border: none;
+  text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.7;
+  background-color: var(--color-hover);
   cursor: pointer;
+}
+
+.button:disabled {
+  background-color: var(--color-light-secondary);
+  color: var(--color-dark-secondary);
+}
+
+.button:disabled:hover {
+  cursor: initial;
 }
 
 @media screen and (max-width: 940px) {

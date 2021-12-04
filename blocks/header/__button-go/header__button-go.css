@@ -1,0 +1,3 @@
+.header__button-go:hover .header__heart-icon {
+  background-image: url(../../../images/icons/hover/like.svg);
+}

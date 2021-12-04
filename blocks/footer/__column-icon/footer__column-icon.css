@@ -1,4 +1,10 @@
 .footer__column-icon {
+  display: inline-block;
   margin-left: 8px;
   vertical-align: middle;
+  width: 22px;
+  height: 21px;
+  background-image: url(../../../images/icons/ref.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

@@ -6,5 +6,19 @@
   --color-light-secondary: #ebe9ed;
   --color-dark-secondary: #96949e;
   --color-accident: #ffd400;
+  --color-error: #f40934;
+  --color-hover: #5100b8;
   background-color: var(--color-primary-light);
+}
+
+.page::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--color-primary-light);
+  border-radius: 100px;
+}
+
+.page::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: var(--color-primary);
+  border-radius: 100px;
 }

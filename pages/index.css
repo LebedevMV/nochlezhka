@@ -4,7 +4,9 @@
 @import url(../blocks/heading/heading.css);
 @import url(../blocks/heading/_visible/heading_visible.css);
 @import url(../blocks/section/section.css);
+@import url(../blocks/page/__section/page__section.css);
 @import url(../blocks/section/_type/section_type_form.css);
+@import url(../blocks/section/_hidden/section_hidden.css);
 @import url(../blocks/description/description.css);
 @import url(../blocks/description/__list/description__list.css);
 @import url(../blocks/description/__list-item/description__list-item.css);

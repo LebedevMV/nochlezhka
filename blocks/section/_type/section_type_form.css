@@ -4,3 +4,11 @@
   grid-template-columns: 309px 531px;
   gap: 40px;
 }
+
+@media screen and (max-width: 880px) {
+  .section_type_form {
+    grid-template-columns: auto;
+    gap: 0;
+    margin: 0 auto;
+  }
+}

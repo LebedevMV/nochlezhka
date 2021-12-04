@@ -1,5 +1,10 @@
 .form {
-  min-width: 531px;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 880px) {
+  .form {
+    width: 100%;
+  }
 }

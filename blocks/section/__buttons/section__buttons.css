@@ -1,6 +1,5 @@
 .section__buttons {
   margin: 32px auto 80px;
-  max-width: 940px;
   display: flex;
   justify-content: flex-end;
   width: 100%;

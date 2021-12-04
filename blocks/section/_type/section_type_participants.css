@@ -1,9 +1,0 @@
-.section_type_participants {
-  padding: 0 280px;
-}
-
-@media screen and (max-width: 1439px) {
-  .section_type_participants {
-    padding: 0;
-  }
-}

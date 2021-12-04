@@ -3,9 +3,10 @@
   flex-direction: row;
   justify-content: flex-end;
   gap: 12px;
+  background-color: var(--color-primary-light);
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 940px) {
   .form__actions {
     position: fixed;
     bottom: 0;

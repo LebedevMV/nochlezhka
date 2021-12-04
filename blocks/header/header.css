@@ -1,0 +1,25 @@
+.header {
+  padding: 0 40px;
+  min-height: 88px;
+  background-color: var(--color-accident);
+  box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1040px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .header {
+    min-height: 68px;
+    justify-content: space-between;
+  }
+}

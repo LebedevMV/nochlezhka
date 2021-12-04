@@ -2,7 +2,7 @@
     display: block;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 940px) {
   .heading_visible {
     font-size: 44px;
     line-height: 44px;

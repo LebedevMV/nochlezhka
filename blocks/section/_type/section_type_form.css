@@ -5,11 +5,8 @@
   gap: 40px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 940px) {
   .section_type_form {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin: 0 auto;
+    display: block;
   }
 }

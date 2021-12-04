@@ -1,8 +1,8 @@
 .content__heading {
-  margin: 40px 40px 0;
+  margin: 0 40px 40px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 940px) {
   .content__heading {
     margin: 20px 20px 40px;
   }

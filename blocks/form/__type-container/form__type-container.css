@@ -1,4 +1,14 @@
 .form__type-container {
   padding: 12px 0 20px;
+  margin-top: 40px;
   box-shadow: inset 0px -1px 0px var(--color-light-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 940px) {
+  .form__type-container {
+    padding: 20px;
+    margin: 0;
+  }
 }

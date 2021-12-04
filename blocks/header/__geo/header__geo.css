@@ -1,0 +1,9 @@
+.header__geo {
+  display: flex;
+}
+
+@media screen and (max-width: 1240px) {
+  .header__geo {
+    display: none;
+  }
+}

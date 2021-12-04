@@ -21,7 +21,6 @@
 .form__input::placeholder {
     color: var(--color-dark-secondary);
 }
-
 @media screen and (max-width: 940px) {
   .form__input {
     font-size: 16px;

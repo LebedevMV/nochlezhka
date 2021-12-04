@@ -1,7 +1,7 @@
 .button {
   background-color: var(--color-primary);
   color: var(--color-primary-light);
-  padding: 12px 24px;
+  padding: 10px 22px;
   border-radius: 26px;
   display: flex;
   justify-content: center;

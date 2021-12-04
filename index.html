@@ -977,6 +977,55 @@
           </div>
         </form>
       </section>
+      <section class="section section_type_form">
+      <div class="description">
+        <p class="description__text">шаг 3 из 4</p>
+        <h2 class="description__title">укажите контакты и часы работы</h2>
+        <p class="description__text">Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий</p>
+      </div>
+      <form class="form" name="form-3-party">
+        <fieldset class="form__inputs">
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_time">время проведения</label>
+            <input id="form-3-party_time"
+                   type="text"
+                   class="form__input"
+                   name="time"
+                   required
+                   pattern="([0-1][0-9]|2[0-3]):[0-5][0-9]-([0-1][0-9]|2[0-3]):[0-5][0-9]"
+                   placeholder="например: 18:00-22:00">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_address">адрес проведения</label>
+            <textarea id="form-3-party_address" class="form__input form__input_type_textarea" name="address" required placeholder="каждый адрес с новой строки" rows="1"></textarea>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_phone">номер телефона для бронирования</label>
+            <input id="form-3-party_phone" class="form__input" type="tel" name="phone" required pattern="[\d\+\-\(\)]*" value="+7(">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_price">стоимость участия</label>
+            <input type="number" id="form-3-party_price" class="form__input" name="price" required placeholder="укажите стоимость в рублях">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_site">ссылка на сайт</label>
+            <input type="url" id="form-3-party_site" class="form__input" name="site" required value="https://">
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_social">ссылки на соцсети</label>
+            <textarea id="form-3-party_social" class="form__input form__input_type_textarea" name="social" required placeholder="каждая ссылка с новой строки" rows="1"></textarea>
+          </div>
+          <div class="form__input-container">
+            <label class="form__label" for="form-3-party_description">описание</label>
+            <textarea id="form-3-party_description" class="form__input form__input_type_textarea" name="description" required placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено" rows="3"></textarea>
+          </div>
+        </fieldset>
+        <div class="form__actions">
+          <button type="button" class="button button_place_action button_type_secondary">отмена</button>
+          <button type="submit" class="button button_place_action">далее</button>
+        </div>
+      </form>
+    </section>
       <section class="section section_type_form section_hidden">
         <div class="description">
           <p class="paragraph">шаг 3 из 4</p>

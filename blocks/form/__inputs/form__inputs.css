@@ -13,8 +13,13 @@
 }
 
 @media screen and (max-width: 880px) {
+
   .form__inputs {
     padding: 20px;
+  }
+
+  .form__inputs:first-of-type {
+    
   }
 
   .form__inputs:last-of-type {

@@ -1,8 +1,7 @@
 .description {
-    height: 100%;
     display: grid;
     grid-template-columns: auto;
-    grid-auto-rows: max-content;
+    grid-auto-rows: min-content;
     gap: 12px;
     color: var(--color-primary-dark);
 }
@@ -10,5 +9,6 @@
 @media screen and (max-width: 880px) {
   .description {
     padding: 20px;
+    box-shadow: inset 0px -1px 0px var(--color-light-secondary);
   }
 }

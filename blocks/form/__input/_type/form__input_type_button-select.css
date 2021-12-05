@@ -12,7 +12,7 @@
     color: var(--color-primary-dark);
     border: 2px solid var(--color-primary-dark);
     background-image: none;
-    padding-right: 48px;
+    padding-right: 56px;
     box-sizing: border-box;
   }
 
@@ -33,5 +33,13 @@
 
 .form__input_type_button-select:checked + .button:hover {
   background-color: var(--color-hover);
+}
+
+@media screen and (max-width: 940px) {
+  .form__input_type_button-select + .button {
+    padding-right: 44px;
+    background-size: 20px 13.67px;
+    background-position: right 19.98px top 15.45px;
+  }
 }
 

@@ -15,6 +15,13 @@ const hideErrorForSelect = (selectContainer) => {
   errorLabel.style.display = "none";
 }
 
+const changeFormSteps = (form1, form2) => {
+  const section1 = form1.parentNode;
+  const section2 = form2.parentNode;
+  section1.classList.add("section__hidden");
+  section2.classList.remove("section__hidden");
+}
+
 const fillSelectContainer = (selectContainer) => {
   const selectElement = selectContainer.querySelector(".form__input_type_select");
   const options = selectElement.querySelectorAll(".form__select-option");
@@ -28,23 +35,15 @@ const fillSelectContainer = (selectContainer) => {
     });
     selectOptionContainer.append(customOptionElement);
   });
-  const page = document.querySelector(".page");
-  page.addEventListener("click", e => {
-    if(e.target.classList.contains("form__select-option-container")) {
-      e.target.classList.remove("form__select-option-container");
-    }
-  });
   const pseudoOptions = selectOptionContainer.querySelectorAll(".form__select-pseudo-option");
   selectElement.addEventListener("focus", () => {
     selectOptionContainer.classList.add("form__select-option-container_active");
   });
   selectElement.addEventListener("change", () => {
-    console.log("changingValue");
     hideErrorForSelect(selectContainer);
     pseudoOptions.forEach(option => {
       option.classList.remove("form__select-pseudo-option_checked");
     });
-    console.log(`form__select-pseudo-option[data-value="${selectElement.value}"]`);
     const selectedOption = selectOptionContainer.querySelector(`.form__select-pseudo-option[data-value="${selectElement.value}"]`);
     selectedOption.classList.add("form__select-pseudo-option_checked");
   });
@@ -54,6 +53,15 @@ const fillSelectContainer = (selectContainer) => {
   selectElement.checkValidity();
 }
 
+
 const selectContainers = document.querySelectorAll(".form__select-container");
+const page = document.querySelector(".page");
 
 selectContainers.forEach(selectContainer => fillSelectContainer(selectContainer));
+
+page.addEventListener("click", e => {
+  if(!(e.target.classList.contains("form__select-option-container_active") || e.target.classList.contains("form__input_type_select"))) {
+    const activeOptionContainer = document.querySelector(".form__select-option-container_active");
+    if(activeOptionContainer) activeOptionContainer.classList.remove("form__select-option-container_active");
+  }
+});

@@ -14,14 +14,16 @@
     background-image: none;
     padding-right: 48px;
     box-sizing: border-box;
-}
+  }
 
 .form__input_type_button-select:checked + .button {
     background-color: var(--color-primary);
     color: var(--color-primary-light);
     border: none;
+    border: 2px solid var(--color-primary);
     background-image: url(../../../../images/check.svg);
-    background-size: 24px 16.4px;
-    background-position: right 15.46px top 16.14px;
+    background-size: 24px;
+    background-position: right 23px top 10px;
     background-repeat: no-repeat;
 }
+

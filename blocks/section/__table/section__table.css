@@ -1,3 +1,10 @@
 .page__table {
   margin: 22px auto 0;
 }
+
+@media screen and (max-width:940px) {
+  .page__table {
+    margin: 0 auto 84px;
+  }
+
+}

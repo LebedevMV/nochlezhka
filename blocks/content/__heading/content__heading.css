@@ -5,5 +5,6 @@
 @media screen and (max-width: 940px) {
   .content__heading {
     margin: 20px 20px 40px;
+    align-self: start;
   }
 }

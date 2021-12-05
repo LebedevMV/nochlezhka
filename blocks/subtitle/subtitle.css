@@ -10,18 +10,21 @@
   color: var(--color-primary-dark);
 }
 
-@media screen and (max-width: 940px) {
-  .subtitle {
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: normal;
-  }
-}
+
 
 @media screen and (max-width: 940px) {
   .subtitle {
     font-size: 32px;
     line-height: 36px;
     letter-spacing: normal;
+    padding-left: 20px;
+    box-shadow: inset 0px -1px 0px #ebe9ed;
+    padding-bottom: 20px;
   }
+}
+
+.description .subtitle {
+  padding-left:0 ;
+  padding-bottom: 0;
+  box-shadow: none;
 }

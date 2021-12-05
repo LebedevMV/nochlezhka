@@ -4,6 +4,18 @@
   max-width: 880px;
 }
 
+.section::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--color-primary-light);
+  border-radius: 100px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: var(--color-primary);
+  border-radius: 100px;
+}
+
 @media screen and (max-width: 940px) {
   .section {
     height: calc(100vh - 84px);

@@ -19,4 +19,7 @@
     grid-template-rows: auto;
     padding: 20px;
   }
+    .table__cell:last-of-type {
+    box-shadow: none;
+  }
 }

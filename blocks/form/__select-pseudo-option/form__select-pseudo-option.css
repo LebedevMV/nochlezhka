@@ -15,3 +15,15 @@
   background-repeat: no-repeat;
   background-position: top 16.14px right 23.97px;
 }
+
+@media screen and (max-width: 940px) {
+  .form__select-pseudo-option {
+    padding: 12px 20px;
+  }
+
+  .form__select-pseudo-option:active {
+    padding: 12px 56px 12px 20px;
+    background-size: 20px 13.67px;
+    background-position: top 15.45px right 19.98px;
+  }
+}

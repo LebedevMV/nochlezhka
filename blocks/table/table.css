@@ -1,0 +1,11 @@
+.table {
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .table {
+    max-width: 710px;
+
+  }
+}

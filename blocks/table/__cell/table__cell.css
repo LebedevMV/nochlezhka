@@ -1,0 +1,25 @@
+.table__cell {
+  display: grid;
+  grid-template-columns: 117px 346px 417px;
+  padding: 20px 0;
+  box-shadow: inset 0px -1px 0px #ebe9ed;
+}
+
+@media screen and (max-width: 1024px) {
+  .table__cell {
+    grid-template-columns: 50px 280px 410px;
+    gap: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .table__cell {
+    grid-template-columns: 68px auto;
+    grid-template-rows: auto;
+    padding: 20px;
+  }
+    .table__cell:last-of-type {
+    box-shadow: none;
+  }
+}

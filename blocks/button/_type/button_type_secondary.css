@@ -1,0 +1,21 @@
+.button_type_secondary {
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-dark);
+    color: var(--color-primary-dark);
+}
+
+.button_type_secondary:hover {
+  background-color: var(--color-primary-light);
+  border: 2px solid var(--color-hover);
+  color: var(--color-hover);
+}
+
+.button_type_secondary:disabled {
+  background-color: var(--color-light-secondary);
+  color: var(--color-dark-secondary);
+  border: none;
+}
+
+.button_type_secondary:disabled:hover {
+  cursor: initial;
+}

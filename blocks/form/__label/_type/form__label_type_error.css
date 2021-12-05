@@ -1,0 +1,4 @@
+.form__label_type_error {
+  display: none;
+  color: var(--color-error);
+}

@@ -1,6 +1,0 @@
-@media screen and (max-width: 940px) {
-  .table__description {
-    grid-column: 1 / 3;
-    padding-top: 16px;
-  }
-}

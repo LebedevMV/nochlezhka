@@ -1,7 +1,0 @@
-.form__type-container_step_first {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  min-height: 228px;
-  box-shadow: none;
-}

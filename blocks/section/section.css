@@ -3,10 +3,3 @@
   width: 100%;
   max-width: 880px;
 }
-
-@media screen and (max-width: 940px) {
-  .section {
-    height: calc(100vh - 84px);
-    overflow-y: scroll;
-  }
-}

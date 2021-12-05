@@ -4,9 +4,3 @@
   grid-template-columns: 309px 531px;
   gap: 40px;
 }
-
-@media screen and (max-width: 940px) {
-  .section_type_form {
-    display: block;
-  }
-}

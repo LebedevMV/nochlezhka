@@ -20,5 +20,6 @@
 
   .form__inputs:last-of-type {
     margin: 0;
+    padding-bottom: 84px;
   }
 }

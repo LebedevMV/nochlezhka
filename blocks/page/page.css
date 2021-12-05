@@ -22,3 +22,9 @@
   background-color: var(--color-primary);
   border-radius: 100px;
 }
+
+@media screen and (max-width: 940px) {
+  .page {
+    scroll-padding: 0 0 84px;
+  }
+}

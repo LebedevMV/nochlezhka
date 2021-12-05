@@ -20,7 +20,7 @@
     background-color: var(--color-primary);
     color: var(--color-primary-light);
     border: none;
-    background-image: url(../../../../images/check.svg);
+    background-image: url(../../../../images/icons/check.svg);
     background-size: 24px 16.4px;
     background-position: right 15.46px top 16.14px;
     background-repeat: no-repeat;

@@ -8,6 +8,9 @@
     <title>Ночлежка</title>
   </head>
   <body class="page">
+    <template class="select-option-template">
+      <li class="form__select-pseudo-option" data-value="value-1">Значение 1</li>
+    </template>
     <header class="header">
       <div class="header__logo-location">
         <img
@@ -62,8 +65,8 @@
     <main class="content page__content">
       <h1 class="heading content__heading heading_visible">стать участником</h1>
       <section class="section section_type_participants">
-        <h2 class="subtitle">как&nbsp;участвовать?</h2>
-        <ul class="table page__table">
+        <h2 class="subtitle subtitle_place_participants">как&nbsp;участвовать?</h2>
+        <ul class="table section__table">
           <li class="table__cell">
             <p class="line-heading table__number">1</p>
             <h3 class="line-heading table__title">выбор&nbsp;категории</h3>
@@ -230,13 +233,15 @@
               <label class="form__label" for="form-2-cafe_input_city"
                 >город</label
               >
-              <select
+              <div class="form__select-container">
+                <select
                 id="form-2-cafe_input_city"
                 name="city"
                 class="form__input form__input_type_select"
                 required
               >
                 <option
+                  form
                   class="form__select-placeholder"
                   disabled
                   selected
@@ -244,10 +249,11 @@
                 >
                   выберите из списка
                 </option>
-                <option value="moscow">Москва</option>
-
-                <option value="peter">Санкт-Петербург</option>
+                <option class="form__select-option" value="moscow">Москва</option>
+                <option class="form__select-option" value="peter">Санкт-Петербург</option>
               </select>
+              <ul class="form__select-option-container"></ul>
+              </div>
               <label class="form__label form__label_type_error" for="form-2-cafe_input_city">
                 <span class="form__error-icon"></span>Поле заполнено неверно
               </label>
@@ -1315,5 +1321,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,7 @@
+.form__select-pseudo-option_checked {
+  padding: 12px 64px 12px 24px;
+  background-image: url(../../../../images/icons/check_inactive.svg);
+  background-size: 24px 16.4px;
+  background-repeat: no-repeat;
+  background-position: top 16.14px right 23.97px;
+}

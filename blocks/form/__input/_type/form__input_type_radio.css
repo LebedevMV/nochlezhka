@@ -7,9 +7,9 @@
 }
 
 .form__input_type_radio + .form__pseudo-item {
-    background-image: url(../../../../images/radio_inactive.svg); 
+    background-image: url(../../../../images/icons/radio_inactive.svg);
 }
 
 .form__input_type_radio:checked + .form__pseudo-item {
-    background-image: url(../../../../images/radio_active.svg);
+    background-image: url(../../../../images/icons/radio_active.svg);
 }

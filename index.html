@@ -121,7 +121,7 @@
           <p class="paragraph description__text">шаг 1 из 4</p>
           <h2 class="subtitle description__title">выберите категорию</h2>
         </div>
-        <form class="form" name="form-1">
+        <form class="form" name="form-1" novalidate>
           <div class="form__type-container form__type-container_step_first">
             <label
               class="form__label form__label_for_button-select"
@@ -184,10 +184,11 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="cancel"
             >
               отмена
             </button>
-            <button type="button" disabled class="button button_place_action">
+            <button type="submit" disabled class="button button_place_action">
               далее
             </button>
           </div>
@@ -335,17 +336,18 @@
               </label>
             </div>
           </fieldset>
-          <div class="form__actions">
+          <fieldset class="form__actions">
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>
-            <button type="button" class="button button_place_action">
+            <button type="submit" class="button button_place_action">
               далее
             </button>
-          </div>
+          </fieldset>
         </form>
       </section>
       <section class="section section_type_form section_hidden">
@@ -361,7 +363,7 @@
             электронную почту
           </p>
         </div>
-        <form class="form" name="form-2-lecture">
+        <form class="form" name="form-2-lecture" novalidate>
           <div class="form__type-container">
             <label
               class="form__label form__label_for_button-select"
@@ -533,6 +535,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>
@@ -558,7 +561,7 @@
           </p>
         </div>
 
-        <form class="form" name="form-2-party">
+        <form class="form" name="form-2-party" novalidate>
           <div class="form__type-container">
             <label
               class="form__label form__label_for_button-select"
@@ -731,6 +734,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>
@@ -755,7 +759,7 @@
             комфортную сумму
           </p>
         </div>
-        <form class="form" name="form-2-other">
+        <form class="form" name="form-2-other" novalidate>
           <div class="form__type-container">
             <label
               class="form__label form__label_for_button-select"
@@ -890,6 +894,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>
@@ -908,7 +913,7 @@
             каталоге событий
           </p>
         </div>
-        <form class="form" name="form-3-cafe">
+        <form class="form" name="form-3-cafe" novalidate>
           <fieldset class="form__inputs">
             <div class="form__input-container">
               <label class="form__label" for="form-3-cafe_input_time"
@@ -1031,6 +1036,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>
@@ -1049,7 +1055,7 @@
             каталоге событий
           </p>
         </div>
-        <form class="form" name="form-3-lecture">
+        <form class="form" name="form-3-lecture" novalidate>
           <fieldset class="form__inputs">
             <div class="form__input-container">
               <label class="form__label" for="form-3-lecture_input_time"
@@ -1153,6 +1159,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>
@@ -1171,7 +1178,7 @@
             каталоге событий
           </p>
         </div>
-        <form class="form" name="form-3-party">
+        <form class="form" name="form-3-party" novalidate>
           <fieldset class="form__inputs">
             <div class="form__input-container">
               <label class="form__label" for="form-3-party_time"
@@ -1313,6 +1320,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               отмена
             </button>
@@ -1331,7 +1339,7 @@
             каталоге событий
           </p>
         </div>
-        <form class="form" name="form-3-other">
+        <form class="form" name="form-3-other" novalidate>
           <fieldset class="form__inputs">
             <div class="form__input-container">
               <label class="form__label" for="form-3-other_input_time"
@@ -1435,6 +1443,7 @@
             <button
               type="button"
               class="button button_place_action button_type_secondary"
+              name="back"
             >
               назад
             </button>

@@ -4,6 +4,9 @@
   justify-content: flex-end;
   gap: 12px;
   background-color: var(--color-primary-light);
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 940px) {

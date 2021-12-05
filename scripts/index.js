@@ -28,6 +28,12 @@ const fillSelectContainer = (selectContainer) => {
     });
     selectOptionContainer.append(customOptionElement);
   });
+  const page = document.querySelector(".page");
+  page.addEventListener("click", e => {
+    if(e.target.classList.contains("form__select-option-container")) {
+      e.target.classList.remove("form__select-option-container");
+    }
+  });
   const pseudoOptions = selectOptionContainer.querySelectorAll(".form__select-pseudo-option");
   selectElement.addEventListener("focus", () => {
     selectOptionContainer.classList.add("form__select-option-container_active");

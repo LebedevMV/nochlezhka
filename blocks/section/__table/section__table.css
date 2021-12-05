@@ -3,7 +3,7 @@
 }
 
 @media screen and (max-width:940px) {
-  .page__table {
+  .section__table {
     margin: 0 auto 84px;
   }
 }

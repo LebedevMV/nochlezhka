@@ -68,12 +68,15 @@ const firstSection = page.querySelector(".section_type_participants");
 const formStepOneSection = document.forms["form-1"].parentNode;
 const heading = page.querySelector(".heading");
 selectContainers.forEach(selectContainer => fillSelectContainer(selectContainer));
+const typeButtons = document.forms["form-1"].querySelectorAll(".form__input_type_button-select");
+const form1SubmitButton = document.forms["form-1"].querySelector(".button[type='submit']");
 
 openFormButton.addEventListener("click", () => {
   changeSections(firstSection, formStepOneSection);
   heading.classList.remove("heading_visible");
 });
 
+// Реализация переходов между шагами формы
 Array.from(document.forms).forEach(form => {
   const formName = form.getAttribute("name");
   switch(formName) {
@@ -145,6 +148,12 @@ Array.from(document.forms).forEach(form => {
     }
   });
 });
+
+typeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    form1SubmitButton.disabled = false;
+  });
+})
 
 page.addEventListener("click", e => {
   if(!(e.target.classList.contains("form__select-option-container_active") || e.target.classList.contains("form__input_type_select"))) {

@@ -16,7 +16,15 @@
 
 .form__input:focus {
     outline: none;
-    border: 2px solid var(--color-primary-dark);
+    border: 2px solid var(--color-primary);
+}
+
+.form__input:invalid {
+  border: 2px solid var(--color-error);
+}
+
+.form__input:invalid + .form__label_type_error {
+  display: flex;
 }
 
 .form__input::placeholder {

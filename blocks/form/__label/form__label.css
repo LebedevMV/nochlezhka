@@ -4,6 +4,8 @@
   font-weight: normal;
   margin: 0 24px;
   color: var(--color-dark-secondary);
+  display: flex;
+  gap: 12px;
 }
 
 @media screen and (max-width: 940px) {
@@ -11,5 +13,6 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0 20px;
+    gap: 8px;
   }
 }

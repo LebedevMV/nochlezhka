@@ -18,5 +18,5 @@
 Используется методология БЭМ (Nested)
 
 * [Ссылка на макет в Figma](https://www.figma.com/file/dLE6YhFRwuYxwBws2V1H1h/Web%2B_Гедонизмфест?node-id=0%3A1)
-* [Ссылка на UI Kit в Figma](https://www.figma.com/file/ng6teSjV2QI0InmBNCJH94/Ночлежка-(Polished)?node-id=1028%3A5288
+* [Ссылка на UI Kit в Figma](https://www.figma.com/file/ng6teSjV2QI0InmBNCJH94/Ночлежка-(Polished)?node-id=1028%3A5288)
 * [Ссылка на проект на GitHub Pages](https://LebedevMV.github.io/nochlezhka)

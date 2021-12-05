@@ -14,7 +14,7 @@
     background-image: none;
     padding-right: 48px;
     box-sizing: border-box;
-}
+  }
 
 .form__input_type_button-select:checked + .button {
     background-color: var(--color-primary);
@@ -25,3 +25,4 @@
     background-position: right 15.46px top 16.14px;
     background-repeat: no-repeat;
 }
+

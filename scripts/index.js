@@ -15,11 +15,9 @@ const hideErrorForSelect = (selectContainer) => {
   errorLabel.style.display = "none";
 }
 
-const changeFormSteps = (form1, form2) => {
-  const section1 = form1.parentNode;
-  const section2 = form2.parentNode;
-  section1.classList.add("section__hidden");
-  section2.classList.remove("section__hidden");
+const changeSections = (section1, section2) => {
+  section1.classList.add("section_hidden");
+  section2.classList.remove("section_hidden");
 }
 
 const fillSelectContainer = (selectContainer) => {
@@ -53,11 +51,100 @@ const fillSelectContainer = (selectContainer) => {
   selectElement.checkValidity();
 }
 
+const validateForm = form => {
+  let isValid = true;
+  Array.from(form.elements).forEach(elem => {
+    if(elem.willValidate && elem.required) {
+      isValid = elem.checkValidity();
+    }
+  });
+  return isValid;
+}
 
-const selectContainers = document.querySelectorAll(".form__select-container");
 const page = document.querySelector(".page");
-
+const openFormButton = page.querySelector(".section__buttons button");
+const selectContainers = page.querySelectorAll(".form__select-container");
+const firstSection = page.querySelector(".section_type_participants");
+const formStepOneSection = document.forms["form-1"].parentNode;
+const heading = page.querySelector(".heading");
 selectContainers.forEach(selectContainer => fillSelectContainer(selectContainer));
+
+openFormButton.addEventListener("click", () => {
+  changeSections(firstSection, formStepOneSection);
+  heading.classList.remove("heading_visible");
+});
+
+Array.from(document.forms).forEach(form => {
+  const formName = form.getAttribute("name");
+  switch(formName) {
+    case "form-1":
+      form.cancel.addEventListener("click", () => {
+        changeSections(form.parentNode, firstSection);
+        heading.classList.add("heading_visible");
+      });
+      break;
+    case "form-2-cafe":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, formStepOneSection));
+      break;
+    case "form-2-lecture":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, formStepOneSection));
+      break;
+    case "form-2-party":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, formStepOneSection));
+      break;
+    case "form-2-other":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, formStepOneSection));
+      break;
+    case "form-3-cafe":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, document.forms["form-2-cafe"].parentNode));
+      break;
+    case "form-3-lecture":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, document.forms["form-2-lecture"].parentNode));
+      break;
+    case "form-3-party":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, document.forms["form-2-party"].parentNode));
+      break;
+    case "form-3-other":
+      form.back.addEventListener("click", () => changeSections(form.parentNode, formStepOneSection));
+      form.back.addEventListener("click", () => changeSections(form.parentNode, document.forms["form-2-other"].parentNode));
+      break;
+  }
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const isValidForm = validateForm(form);
+    if(!isValidForm) return; // Если форма не валидна то никакие переходы не выполняются
+    switch(formName) {
+      case "form-1":
+        switch(form.type.value) {
+          case "cafe":
+            changeSections(form.parentNode, document.forms["form-2-cafe"].parentNode);
+            break;
+          case "lecture":
+            changeSections(form.parentNode, document.forms["form-2-lecture"].parentNode);
+            break;
+          case "party":
+            changeSections(form.parentNode, document.forms["form-2-party"].parentNode);
+            break;
+          case "other":
+            changeSections(form.parentNode, document.forms["form-2-other"].parentNode);
+            break;
+        }
+        break;
+      case "form-2-cafe":
+        changeSections(form.parentNode, document.forms["form-3-cafe"].parentNode);
+        break;
+      case "form-2-lecture":
+        changeSections(form.parentNode, document.forms["form-3-lecture"].parentNode);
+        break;
+      case "form-2-party":
+        changeSections(form.parentNode, document.forms["form-3-party"].parentNode);
+        break;
+      case "form-2-other":
+        changeSections(form.parentNode, document.forms["form-3-lecture"].parentNode);
+        break;
+    }
+  });
+});
 
 page.addEventListener("click", e => {
   if(!(e.target.classList.contains("form__select-option-container_active") || e.target.classList.contains("form__input_type_select"))) {

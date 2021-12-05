@@ -1,6 +1,8 @@
 .footer__column-link {
   margin-bottom: 24px;
   display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 500;
   padding: 0;
 }

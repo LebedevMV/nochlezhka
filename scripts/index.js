@@ -162,7 +162,7 @@ page.addEventListener("click", e => {
   }
 });
 
-window.addEventListener ('resize', function mobileTextButton () {
+window.addEventListener ('resize', () => {
   if (window.innerWidth <= 941 ) {
     document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Продолжить"})
    } else {

@@ -163,10 +163,10 @@ page.addEventListener("click", e => {
 });
 
 window.addEventListener ('resize', function mobileTextButton () {
-  if (window.innerWidth <= 426 ) {
-    document.querySelector('#next').textContent = "Продолжить"
+  if (window.innerWidth <= 941 ) {
+    document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Продолжить"})
    } else {
-    document.querySelector('#next').textContent = "Далее"
+    document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Далее"})
    }
 });
 

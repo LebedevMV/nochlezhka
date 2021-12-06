@@ -161,3 +161,12 @@ page.addEventListener("click", e => {
     if(activeOptionContainer) activeOptionContainer.classList.remove("form__select-option-container_active");
   }
 });
+
+window.addEventListener ('resize', function mobileTextButton () {
+  if (window.innerWidth <= 426 ) {
+    document.querySelector('#next').textContent = "Продолжить"
+   } else {
+    document.querySelector('#next').textContent = "Далее"
+   }
+});
+

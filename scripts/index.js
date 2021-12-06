@@ -161,3 +161,12 @@ page.addEventListener("click", e => {
     if(activeOptionContainer) activeOptionContainer.classList.remove("form__select-option-container_active");
   }
 });
+
+window.addEventListener ('resize', () => {
+  if (window.innerWidth <= 941 ) {
+    document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Продолжить"})
+   } else {
+    document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Далее"})
+   }
+});
+

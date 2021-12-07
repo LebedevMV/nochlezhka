@@ -1,5 +1,5 @@
 .paragraph {
-  font-family: "TT Firs Neue";
+  font-family:var(--default-font);
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;

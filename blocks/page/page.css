@@ -1,5 +1,5 @@
 .page {
-  font-family: 'TT Firs Neue';
+  font-family: var(--default-font);
   background-color: var(--color-primary-light);
 }
 

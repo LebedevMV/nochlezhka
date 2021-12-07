@@ -6,6 +6,6 @@
 }
 
 .footer__social-icon:hover {
+  opacity: 0.7;
   cursor: pointer;
-  background-color: var(--color-hover);
 }

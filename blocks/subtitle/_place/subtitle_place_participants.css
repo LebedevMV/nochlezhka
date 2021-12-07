@@ -6,5 +6,6 @@
 @media screen and (max-width: 940px) {
   .subtitle_place_participants {
     padding: 20px;
+    box-shadow: inset 0px -1px 0px #ebe9ed;
   }
 }

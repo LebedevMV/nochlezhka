@@ -12,6 +12,9 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
+  max-width: 531px;
+  box-sizing: border-box;
+  border: 2px solid var(--color-primary);
 }
 
 .button:hover {
@@ -22,6 +25,7 @@
 .button:disabled {
   background-color: var(--color-light-secondary);
   color: var(--color-dark-secondary);
+  border: 2px solid var(--color-light-secondary);
 }
 
 .button:disabled:hover {
@@ -34,5 +38,6 @@
     padding: 12px 20px;
     font-size: 16px;
     line-height: 20px;
+    max-width: 100%;
   }
 }

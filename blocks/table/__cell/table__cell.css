@@ -3,6 +3,7 @@
   grid-template-columns: 117px 346px 417px;
   padding: 20px 0;
   box-shadow: inset 0px -1px 0px #ebe9ed;
+  max-width: 880px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -18,6 +19,7 @@
     grid-template-columns: 68px auto;
     grid-template-rows: auto;
     padding: 20px;
+    max-width: calc(100% - 40px)
   }
     .table__cell:last-of-type {
     box-shadow: none;

@@ -38,6 +38,8 @@
 @import url(../blocks/line-heading/line-heading.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__number/table__number.css);
+@import url(../blocks/table/__title/table__title.css);
 @import url(../blocks/table/__description/table__description.css);
 @import url(../blocks/section/__buttons/section__buttons.css);
 @import url(../blocks/section/__table/section__table.css);

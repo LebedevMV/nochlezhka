@@ -3,11 +3,13 @@
     flex-direction: column;
     gap: 12px;
     color: var(--color-primary-dark);
+    max-width: 309px;
 }
 
 @media screen and (max-width: 940px) {
   .description {
     padding: 20px;
     box-shadow: inset 0px -1px 0px var(--color-light-secondary);
+    max-width: calc(100% - 40px);
   }
 }

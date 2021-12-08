@@ -24,7 +24,7 @@
 .form__input_type_button-select:checked + .button {
     background-color: var(--color-primary);
     color: var(--color-primary-light);
-    border: none;
+    border: 2px solid var(--color-primary);
     background-image: url(../../../../images/icons/check.svg);
     background-size: 24px 16.4px;
     background-position: right 23.97px top 16.14px;

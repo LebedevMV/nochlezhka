@@ -8,6 +8,7 @@
   padding: 0;
   color: var(--color-primary-dark);
   width: auto;
+  max-width: 420px;
 }
 
 
@@ -17,5 +18,6 @@
     font-size: 32px;
     line-height: 36px;
     letter-spacing: normal;
+    max-width: calc(100% - 40px)
   }
 }

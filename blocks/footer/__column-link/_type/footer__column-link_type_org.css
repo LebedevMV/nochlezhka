@@ -7,3 +7,7 @@
   color: var(--color-hover);
   cursor: pointer;
 }
+
+.footer__column-link_type_org::after {
+  display: none;
+}

@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-.footer__column-link:hover .footer__column-icon {
-  background-image: url(../../../images/icons/hover/ref.svg);
-}
-
 @media screen and (max-width: 1040px) {
   .footer__column-link {
     display: flex;
@@ -27,4 +23,8 @@
   height: 21px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.footer__column-link:hover::after {
+  content: url(../../../images/icons/hover/ref.svg);
 }

@@ -7,13 +7,24 @@
   padding: 0;
 }
 
-.footer__column-link:hover .footer__column-icon {
-  background-image: url(../../../images/icons/hover/ref.svg);
-}
-
 @media screen and (max-width: 1040px) {
   .footer__column-link {
     display: flex;
     justify-content: space-between;
   }
+}
+
+.footer__column-link::after {
+  content: url(../../../images/icons/ref.svg);
+  display: inline;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 22px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.footer__column-link:hover::after {
+  content: url(../../../images/icons/hover/ref.svg);
 }

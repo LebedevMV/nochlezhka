@@ -1,6 +1,7 @@
 .table {
   list-style: none;
   padding: 0;
+  counter-reset: table;
 }
 
 @media screen and (max-width: 1024px) {

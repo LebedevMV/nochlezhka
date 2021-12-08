@@ -1,9 +1,0 @@
-.table__number {
-  max-width: 77px;
-}
-
-@media screen and (max-width: 940px) {
-  .table__number {
-    max-width: 68px;
-  }
-}

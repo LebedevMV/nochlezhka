@@ -25,6 +25,7 @@
 @import url(../blocks/content/__heading/content__heading.css);
 @import url(../blocks/heading/_visible/heading_visible.css);
 @import url(../blocks/section/section.css);
+@import url(../blocks/section/_type/section_type_participants.css);
 @import url(../blocks/subtitle/subtitle.css);
 @import url(../blocks/subtitle/_place/subtitle_place_participants.css);
 @import url(../blocks/paragraph/paragraph.css);

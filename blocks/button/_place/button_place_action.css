@@ -1,9 +1,11 @@
 .button_place_action {
   min-width: 204px;
+  max-width: 258px;
 }
 
 @media screen and (max-width: 940px) {
   .button_place_action {
     min-width: 153.5px;
+    max-width: calc(90% / 2);
   }
 }

@@ -1,17 +1,11 @@
-.table {
-  list-style: none;
-  padding: 0;
-}
-
 @media screen and (max-width: 1024px) {
-  .table {
+  .section_type_participants {
     max-width: 710px;
-
   }
 }
 
 @media screen and (max-width: 940px) {
-  .table {
+  .section_type_participants {
     max-width: none;
   }
 }

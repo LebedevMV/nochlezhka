@@ -6,6 +6,12 @@
   max-width: 880px;
 }
 
+.table__cell::before {
+  counter-increment: table;
+  content: counter(table);
+  max-width: 77px;
+}
+
 @media screen and (max-width: 1024px) {
   .table__cell {
     grid-template-columns: 50px 280px 410px;
@@ -23,5 +29,9 @@
   }
     .table__cell:last-of-type {
     box-shadow: none;
+  }
+
+  .table__cell::before {
+    max-width: 68px;
   }
 }

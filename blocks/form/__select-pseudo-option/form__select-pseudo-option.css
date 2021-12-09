@@ -1,5 +1,6 @@
 .form__select-pseudo-option {
   padding: 12px 24px;
+  transition: background-color .4s linear .3s;
 }
 
 .form__select-pseudo-option:hover {

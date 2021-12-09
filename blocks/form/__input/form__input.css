@@ -12,6 +12,7 @@
     line-height: 24px;
     box-sizing: border-box;
     -moz-appearance: textfield;
+    transition: border .4s linear .3s;
 }
 
 .form__input:focus {

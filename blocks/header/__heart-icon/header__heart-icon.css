@@ -5,4 +5,5 @@
   background-image: url(../../../images/icons/like.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  transition: background-image .4s linear .3s;
 }

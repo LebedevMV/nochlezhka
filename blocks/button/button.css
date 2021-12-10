@@ -13,6 +13,7 @@
   text-decoration: none;
   box-sizing: border-box;
   border: 2px solid var(--color-primary);
+  transition: background-color .4s linear .3s, border .4s linear .3s, color .4s linear .3s;
 }
 
 .button:hover {

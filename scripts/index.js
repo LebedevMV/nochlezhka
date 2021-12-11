@@ -34,7 +34,7 @@ const fillSelectContainer = (selectContainer) => {
     selectOptionContainer.append(customOptionElement);
   });
   const pseudoOptions = selectOptionContainer.querySelectorAll(".form__select-pseudo-option");
-  selectElement.addEventListener("mousedown", (e) => {
+  selectElement.addEventListener("mousedown", e => {
     e.preventDefault();
     selectOptionContainer.classList.toggle("form__select-option-container_active");
     selectElement.blur();

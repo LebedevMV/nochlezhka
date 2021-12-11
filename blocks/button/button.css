@@ -9,10 +9,8 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  border: none;
   text-decoration: none;
   box-sizing: border-box;
-  border: 2px solid var(--color-primary);
   transition: background-color .2s linear .15s, border .2s linear .15s, color .2s linear .15s;
 }
 
@@ -24,7 +22,6 @@
 .button:disabled {
   background-color: var(--color-light-secondary);
   color: var(--color-dark-secondary);
-  border: 2px solid var(--color-light-secondary);
 }
 
 .button:disabled:hover {

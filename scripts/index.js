@@ -167,9 +167,9 @@ page.addEventListener("click", e => {
 
 window.addEventListener ('resize', () => {
   if (window.innerWidth <= 941 ) {
-    document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Продолжить"})
+    document.querySelectorAll('.form__actions button:last-of-type').forEach(e => e.textContent = "Продолжить");
    } else {
-    document.querySelectorAll('.form__actions button:last-of-type').forEach(e=>{e.textContent = "Далее"})
+    document.querySelectorAll('.form__actions button:last-of-type').forEach(e => e.textContent = "Далее");
    }
 });
 

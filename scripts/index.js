@@ -34,8 +34,11 @@ const fillSelectContainer = (selectContainer) => {
     selectOptionContainer.append(customOptionElement);
   });
   const pseudoOptions = selectOptionContainer.querySelectorAll(".form__select-pseudo-option");
-  selectElement.addEventListener("focus", () => {
-    selectOptionContainer.classList.add("form__select-option-container_active");
+  selectElement.addEventListener("mousedown", e => {
+    e.preventDefault();
+    selectOptionContainer.classList.toggle("form__select-option-container_active");
+    selectElement.blur();
+    window.focus();
   });
   selectElement.addEventListener("change", () => {
     hideErrorForSelect(selectContainer);

@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+  .section_type_participants {
+    max-width: 710px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .section_type_participants {
+    max-width: none;
+  }
+}

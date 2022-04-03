@@ -1,0 +1,31 @@
+.footer__column-link {
+  margin-bottom: 24px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0;
+}
+
+@media screen and (max-width: 1040px) {
+  .footer__column-link {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__column-link::after {
+  content: url(../../../images/icons/ref.svg);
+  display: inline;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 22px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: content .4s linear .3s;
+}
+
+.footer__column-link:hover::after {
+  content: url(../../../images/icons/hover/ref.svg);
+}

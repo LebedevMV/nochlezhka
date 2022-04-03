@@ -1,0 +1,17 @@
+.heading {
+  font-family: var(--default-font);
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: var(--color-primary-dark);
+  max-width: calc(100% - 80px);
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 940px) {
+  .heading {
+    display: none;
+  }
+}

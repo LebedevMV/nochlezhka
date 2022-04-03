@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #7100ff;
+  --color-primary-dark: #3b3748;
+  --color-primary-light: #fcfaf7;
+  --color-light-secondary: #ebe9ed;
+  --color-dark-secondary: #96949e;
+  --color-accident: #ffd400;
+  --color-error: #f40934;
+  --color-hover: #5100b8;
+  --default-font: "TT Firs Neue", "Trebuchet MS", sans-serif;
+}

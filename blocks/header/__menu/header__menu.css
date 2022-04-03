@@ -1,0 +1,17 @@
+.header__menu {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .header__menu {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    transition: opacity .4s linear .3s;
+  }
+
+  .header__menu:hover {
+    opacity: .7;
+    cursor: pointer;
+  }
+}

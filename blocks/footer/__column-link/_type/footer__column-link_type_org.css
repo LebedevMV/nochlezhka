@@ -1,0 +1,13 @@
+.footer__column-link_type_org {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.footer__column-link_type_org:hover {
+  color: var(--color-hover);
+  cursor: pointer;
+}
+
+.footer__column-link_type_org::after {
+  display: none;
+}

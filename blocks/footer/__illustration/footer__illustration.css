@@ -1,0 +1,10 @@
+.footer__illustration {
+  width: 193px;
+  height: 193px;
+}
+
+@media screen and (max-width: 1240px) {
+  .footer__illustration {
+    display: none;
+  }
+}

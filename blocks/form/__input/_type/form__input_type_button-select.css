@@ -1,0 +1,45 @@
+.form__input_type_button-select {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__input_type_button-select + .button {
+    background-color: var(--color-primary-light);
+    justify-content: flex-start;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
+    background-image: none;
+    padding-right: 56px;
+    box-sizing: border-box;
+  }
+
+.form__input_type_button-select + .button:hover {
+  border: 2px solid var(--color-hover);
+  color: var(--color-hover);
+}
+
+.form__input_type_button-select:checked + .button {
+    background-color: var(--color-primary);
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-primary);
+    background-image: url(../../../../images/icons/check.svg);
+    background-size: 24px 16.4px;
+    background-position: right 23.97px top 16.14px;
+    background-repeat: no-repeat;
+}
+
+.form__input_type_button-select:checked + .button:hover {
+  background-color: var(--color-hover);
+}
+
+@media screen and (max-width: 940px) {
+  .form__input_type_button-select + .button {
+    padding-right: 44px;
+    background-size: 20px 13.67px;
+    background-position: right 19.98px top 15.45px;
+  }
+}
+

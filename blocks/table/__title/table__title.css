@@ -1,0 +1,10 @@
+.table__title {
+    max-width: 306px;
+  }
+  
+  @media screen and (max-width: 940px) {
+    .table__title {
+      max-width: 252px;
+    }
+  }
+  

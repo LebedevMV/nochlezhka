@@ -1,0 +1,22 @@
+.page {
+  font-family: var(--default-font);
+  background-color: var(--color-primary-light);
+}
+
+.page::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--color-primary-light);
+  border-radius: 100px;
+}
+
+.page::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: var(--color-primary);
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 940px) {
+  .page {
+    scroll-padding: 0 0 84px;
+  }
+}

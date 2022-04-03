@@ -1,0 +1,10 @@
+.button_type_noborder {
+  background-color: transparent;
+  color: var(--color-primary-dark);
+  border: none;
+}
+
+.button_type_noborder:hover {
+  background-color: transparent;
+  color: var(--color-hover);
+}
